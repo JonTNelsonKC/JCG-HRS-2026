@@ -1,0 +1,14 @@
+{
+  "name": "stenhouse-superfans",
+  "version": "1.0.0",
+  "description": "A live Ricky Stenhouse Jr. superfan dashboard for local terminal testing.",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
