@@ -1,0 +1,18 @@
+{
+  "name": "stenhouse-superfans",
+  "version": "1.0.0",
+  "description": "A live Ricky Stenhouse Jr. superfan dashboard for Cloudflare Pages and local testing.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "pages:dev": "npx wrangler pages dev public",
+    "deploy": "npx wrangler pages deploy public",
+    "deploy:pages": "npx wrangler pages deploy public",
+    "check": "node --check server.js && node --check src/nascar-data.js && node --check functions/api/dashboard.js && node --check functions/api/wreckhouse.js && node --check functions/api/health.js && node --check public/app.js && node --check public/wreckhouse.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
