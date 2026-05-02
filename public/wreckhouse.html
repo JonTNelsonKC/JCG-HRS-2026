@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ricky Wreckhouse</title>
+    <meta name="description" content="Ricky Stenhouse Jr. wreck archive for superfans.">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body class="wreckhouse-page">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Ricky Stenhouse Jr. dashboard home">
+        <span class="brand__badge" aria-hidden="true">HM</span>
+        <span class="brand__text">
+          <span class="brand__small">Ricky</span>
+          <span class="brand__big">Wreckhouse</span>
+        </span>
+      </a>
+      <div class="topbar__actions">
+        <a class="nav-pill nav-pill--home" href="/">Home</a>
+        <details class="control-menu">
+          <summary class="icon-button" aria-label="Open site menu">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M4 7h16"></path>
+              <path d="M4 12h16"></path>
+              <path d="M4 17h16"></path>
+            </svg>
+          </summary>
+          <div class="control-menu__panel">
+            <a class="control-menu__item" href="/wreckhouse.html">
+              <span>Wreckhouse</span>
+              <strong>Open page</strong>
+            </a>
+            <a class="control-menu__item" href="/schedule.html">
+              <span>Future schedule</span>
+              <strong>Track preview</strong>
+            </a>
+            <a class="control-menu__item" href="/news.html">
+              <span>News</span>
+              <strong>Ricky & NASCAR links</strong>
+            </a>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <main>
+      <section class="wreck-hero">
+        <div class="wreck-hero__content">
+          <p class="eyebrow">No. 47 chaos file</p>
+          <h1>Ricky Wreckhouse</h1>
+          <p class="wreck-hero__copy">The superfan notebook for official 2026 incident finishes, plus the big past clips that earned the nickname a permanent garage pass.</p>
+          <div class="hero__meta">
+            <span id="seasonIncidentCount" class="race-pill">Scanning feed</span>
+            <span id="wreckLastUpdated">Waiting for sync</span>
+          </div>
+        </div>
+        <div class="number-mark" aria-hidden="true">47</div>
+      </section>
+
+      <section class="panel wreck-summary">
+        <div class="panel__header">
+          <div>
+            <p class="section-kicker">This Season</p>
+            <h2>2026 Wreck Log</h2>
+          </div>
+          <span class="source-chip">Official Status Feed</span>
+        </div>
+        <div id="seasonWrecks" class="wreck-grid"></div>
+      </section>
+
+      <section class="panel wreck-summary">
+        <div class="panel__header">
+          <div>
+            <p class="section-kicker">The Big Ones</p>
+            <h2>Notable Past Wrecks</h2>
+          </div>
+          <span class="source-chip">Photo / Video Archive</span>
+        </div>
+        <div id="notableWrecks" class="wreck-grid wreck-grid--notable"></div>
+      </section>
+
+      <section class="sources">
+        <div>
+          <p class="section-kicker">Receipts</p>
+          <h2>Wreckhouse Sources</h2>
+        </div>
+        <div id="wreckSources" class="source-links"></div>
+      </section>
+    </main>
+
+    <script src="/wreckhouse.js" defer></script>
+  </body>
+</html>
