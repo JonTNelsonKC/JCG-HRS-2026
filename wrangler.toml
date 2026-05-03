@@ -1,0 +1,12 @@
+name = "stenhouse-superfans"
+compatibility_date = "2026-04-26"
+pages_build_output_dir = "public"
+
+# One-time setup for shared online F1 rankings.
+# Replace the IDs below with your real KV namespace IDs.
+# After this is set once, future deploys only need a push.
+#
+# [[kv_namespaces]]
+# binding = "F1_RANKINGS"
+# id = "YOUR_PRODUCTION_KV_NAMESPACE_ID"
+# preview_id = "YOUR_PREVIEW_KV_NAMESPACE_ID"
