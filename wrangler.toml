@@ -1,0 +1,8 @@
+"$schema" = "./node_modules/wrangler/config-schema.json"
+name = "stenhouse-superfans"
+pages_build_output_dir = "./public"
+compatibility_date = "2026-04-26"
+
+[[kv_namespaces]]
+binding = "F1_RANKINGS"
+id = "<NAMESPACE_ID>"
